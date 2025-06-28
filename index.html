@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tres Puntos - Herramientas de Diseño</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header id="top">
+        <h1 class="site-heading ...">...</h1>
+    </header>
+    <header>
+
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">Herramientas de diseño para encuadernacion</span>
+            <span class="site-heading-lower">Tres Puntos</span>
+        </h1>
+    </header>
+
+    <!-- Navigation-->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top shadow-lg mx-auto px-4"
+        style="width: 90%; max-width: 1140px; top: 20px; border-radius: 1.5rem">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/favicon.png" alt="Logo Tres Puntos" class="animated-logo me-2" style="width: 30px; height: auto;">
+                <!--span class="fw-bold d-none d-lg-inline text-uppercase">Tres Puntos</span-->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="#top">Home</a></li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="#quienesSomos">¿Quienes
+                            somos?</a></li>
+                    <li class="nav-item dropdown px-lg-5">
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <!-- Submenú: Plegaderas de metal -->
+                            <li class="dropdown dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Plegaderas de metal
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(0)">Acero inoxidable</a></li>
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(0)">Latón grande</a></li>
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(0)">Latón chica</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Submenú: Plegaderas de teflón -->
+                            <li class="dropdown dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Plegaderas de teflón
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(1)">Modelo abanico</a></li>
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(1)">Modelo clásico</a></li>
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(1)">Modelo lápiz</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Submenú: Punzones -->
+                            <li class="dropdown dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Punzones
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(2)">Micro punzón</a></li>
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(2)">Punzón pomo</a></li>
+                                    <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(2)">Punzón largo</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Ítem simple -->
+                            <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(3)">Cortante de precisión</a></li>
+                            <li><a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(3)">Rodillo para Grabado</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="store.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero" class="hero-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Herramientas de diseño para encuadernacion</span>
+                        <span class="section-heading-lower">Tres puntos</span>
+                    </h2>
+                    <p class="mb-3">Proyecto de diseño y elaboración manual de herramientas para encuadernar.
+                        Desarrollado y llevado adelante por Mariana Carballo y Jeremías Sanfelice.</p>
+                    <div class="cta-button">
+                        <a href="#novedades" class="btn cta-novedades">
+                            <span>NOVEDADES</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quienesSomos" class="quienesSomos section">
+        <section class="page-section cta">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">Tres Puntos</span>
+                                <span class="section-heading-lower">¿Quienes somos?</span>
+                            </h2>
+                            <p class="mb-4">Proyecto de diseño y elaboración manual de herramientas para encuadernar.
+                                </h2>
+                            <p>Emprendimiento dedicado al diseño y desarrollo de herramientas especializadas para
+                                encuadernación
+                                artesanal, con foco en la funcionalidad, la durabilidad y el cuidado del detalle. Cada
+                                pieza está
+                                pensada para acompañar y potenciar el trabajo manual, respetando los oficios y saberes
+                                tradicionales
+                                desde una mirada contemporánea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+
+                                <span class="section-heading-lower">Mariana</span>
+                            </h2>
+                            <p>Se dedica a la encuadernación artesanal, la edición de publicaciones y la impresión
+                                tipográfica
+                                en Otros Tiempos Imprenta Editora, donde explora oficios tradicionales vinculados al
+                                libro y la
+                                palabra impresa. Su trabajo combina precisión técnica con sensibilidad estética, dando
+                                vida a
+                                piezas únicas que recuperan el valor de lo hecho a mano.</p>
+                            <h2 class="section-heading mb-4">
+
+                                <span class="section-heading-lower">Jeremias</span>
+                            </h2>
+                            <p>por su parte, diseña y desarrolla herramientas especializadas para diversos oficios,
+                                con un
+                                enfoque que articula la funcionalidad, la ergonomía y la belleza material. Su
+                                producción dialoga
+                                con el hacer artesanal, ofreciendo soluciones pensadas desde la experiencia del
+                                taller y la
+                                innovación aplicada.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="novedades" class="novedades section py-5 cta-box cta">
+
+        <!-- Título -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2 class="section-heading mb-4">
+                <span class="section-heading-lower" style="font-size: 5rem;">NOVEDADES</span>
+            </h2>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- Intro con texto dividido -->
+            <div class="row align-items-center novedades-header mb-5">
+                <div class="col-lg-8 col-md-12">
+                    <div class="novedades-intro">
+                        <h2 class="novedades-heading">
+                            <div>Set de Plegaderas Pocket</div>
+                            <div><span>performance solutions</span></div>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="novedades-summary">
+                        <p>Caja realizada en madera de algarrobo, con un acabado cálido y natural que resalta la veta
+                            del material. En su interior, tres delicadas ranuras alojan y protegen cuidadosamente un set
+                            de tres plegaderas distintas, pensadas para acompañar diversos momentos del proceso de
+                            encuadernación. Una pieza funcional y estética, diseñada para preservar las herramientas con
+                            elegancia y durabilidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards de novedades -->
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-4 col-md-6  mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cta-inner  novedades-card position-relative z-1 p-4  rounded bg-faded">
+                        <div class="novedades-icon mb-3">
+                            <i class="bi bi-palette fs-1"></i>
+                        </div>
+                        <h3>Diseño y funcionalidad artesanal</h3>
+                        <p>Todas las plegaderas incluidas presentan un diseño original, diferente a sus versiones
+                            grandes disponibles. Su escala contenida y formas particulares las vuelven ideales para
+                            tareas precisas dentro del proceso de encuadernación artesanal.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cta-inner novedades-card position-relative z-1 p-4 rounded bg-faded">
+                        <div class="novedades-icon mb-3">
+                            <i class="bi bi-gem fs-1"></i>
+                        </div>
+                        <h3>Kit de diseño</h3>
+                        <p> Una plegadera de acero inoxidable<br>
+                            Una plegadera de teflón<br>
+                            Una plegadera de latón
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cta-inner novedades-card position-relative z-1 p-4 rounded bg-faded">
+                        <div class="novedades-icon mb-3">
+                            <i class="bi-search  fs-1"></i>
+                        </div>
+                        <h3>Precisión y escala contenida</h3>
+                        <p> Pensadas para trabajar detalles<br>
+                            Ideales para origami y plegado de pequeñas piezas<br>
+                            Medida final del set: 100 x 50 mm
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="herramientas-section cta">
+        <div class="container py-5 text-center">
+
+            <div class="position-relative mb-5" style="height: 80px;">
+                <button id="btn-prev"
+                    class="btn p-0 m-0 border-0 bg-transparent shadow-none position-absolute start-0 top-50 translate-middle-y"
+                    style="box-shadow: none; outline: none;">
+                    <i class="bi bi-arrow-left-circle fs-1 nav-icon"></i>
+                </button>
+
+                <h2 id="titulo-seccion"
+                    class="section-heading position-absolute top-50 start-50 translate-middle text-center mb-0"
+                    style="font-size: 5rem;">
+                    Plegaderas de Metal
+                </h2>
+
+                <button id="btn-next"
+                    class="btn p-0 m-0 border-0 bg-transparent shadow-none position-absolute end-0 top-50 translate-middle-y"
+                    style="box-shadow: none; outline: none;">
+                    <i class="bi bi-arrow-right-circle fs-1 nav-icon"></i>
+                </button>
+            </div>
+
+            <div class="position-relative">
+
+                <!-- Contenedor dinámico donde se cambiará todo el contenido -->
+                <div id="contenido-herramientas" class="row justify-content-center">
+
+                    <!-- Aquí va el contenido inicial (Plegaderas de Metal) -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm cta-inner bg-faded">
+                            <a data-bs-toggle="modal" data-bs-target="#imgModal">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/img/plegadora_acero.jpg" class="img-fluid rounded img-producto"
+                                        alt="Plegadera Acero">
+                                    <div class="zoom-icon"><i class="bi bi-search"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body" style="font-family: 'Lora', serif;">
+                                <h3 class="card-title">Acero Inoxidable AX-01</h3>
+                                <p class="card-text">Herramienta artesanal fabricada en acero inoxidable de alta
+                                    calidad.</p>
+                                <ul class="text-start ps-3">
+                                    <li>120 x 25mm x 2mm</li>
+                                    <li>Doble punta</li>
+                                    <li>Ideal para trazar papel, cartulina, cartones finos</li>
+                                    <li>Su lado más fino es ideal para trabajar cantos, esquinas, cartonaje</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm cta-inner bg-faded">
+                            <a data-bs-toggle="modal" data-bs-target="#imgModal">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/img/plegadora_acero.jpg" class="img-fluid rounded img-producto"
+                                        alt="Plegadera Acero">
+                                    <div class="zoom-icon"><i class="bi bi-search"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body" style="font-family: 'Lora', serif;">
+                                <h3 class="card-title">Laton Grande LT-01</h3>
+                                <p class="card-text">Ideal para trabajos delicados y detalles finos gracias a su punta
+                                    resistente.</p>
+                                <ul class="text-start ps-3">
+                                    <li>120 x 20mm x 2mm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm cta-inner bg-faded">
+                            <a data-bs-toggle="modal" data-bs-target="#imgModal">
+                                <div class="img-hover-zoom">
+                                    <img src="assets/img/plegadora_acero.jpg" class="img-fluid rounded img-producto"
+                                        alt="Plegadera Acero">
+                                    <div class="zoom-icon"><i class="bi bi-search"></i></div>
+                                </div>
+                            </a>
+                            <div class="card-body" style="font-family: 'Lora', serif;">
+                                <h3 class="card-title">Laton Chica LT-02</h3>
+                                <p class="card-text">Herramienta artesanal fabricada en acero inoxidable, ideal para
+                                    trabajos precisos en encuadernación.</p>
+                                <ul class="text-start ps-3">
+                                    <li>95 x 20mm x 2mm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para mostrar imagen ampliada -->
+        <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <img src="assets/img/plegadora_acero.jpg" class="img-fluid rounded" alt="Imagen grande"
+                        id="modal-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
