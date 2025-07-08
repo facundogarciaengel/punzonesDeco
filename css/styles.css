@@ -58,7 +58,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -13086,4 +13086,70 @@ p {
 
 #contenido-herramientas {
   scroll-margin-top: 100px; /* o la altura real del navbar + un poco */
+}
+
+.cart-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+.cart-counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.btn-amarillo-naranja {
+  background-color: rgba(240, 165, 0, 0.8); /* naranja amarillento con transparencia */
+  border-color: #cc8500;     /* naranja oscuro */
+  color: white;
+}
+.btn-amarillo-naranja:hover {
+  background-color: rgba(204, 133, 0, 0.9); /* naranja más oscuro y menos transparente */
+  border-color: #b37400;
+  color: white;
+}
+
+.btn-naranja {
+  background-color: var(--bs-primary);
+  color: white;
+  border: none;
+}
+.btn-naranja:hover {
+  background-color: var(--bs-link-hover-color);
+}
+
+.cart-btn img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cart-btn:hover img {
+  transform: scale(1.1); /* Agranda 10% */
+}
+
+.cart-btn:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+#boton-carrito-flotante {
+  transition: transform 0.3s ease;
+}
+
+#boton-carrito-flotante:hover {
+  transform: scale(1.1); /* Aumenta el tamaño un 10% */
+  cursor: pointer;
+}
+#contador-carrito {
+  font-family: 'Arial', sans-serif; /* o la fuente que prefieras */
+  font-weight: bold;
+  font-size: 0.9rem; /* para ajustar tamaño */
 }
