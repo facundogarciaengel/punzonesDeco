@@ -436,3 +436,25 @@ function restarDelCarrito(id) {
   actualizarContadorCarrito();
   actualizarModalCarrito();
 }
+
+document.querySelectorAll('.dropdown-menu .dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', e => {
+      e.preventDefault();
+
+      const submenu = toggle.nextElementSibling;
+      if (!submenu) return;
+
+      // Solo alternar el submenu sin cerrar otros
+      submenu.classList.toggle('show');
+    });
+  });
+
+  // Opcional: cerrar submenus cuando se cierra el menú principal (hamburguesa)
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  if (navbarToggler) {
+    navbarToggler.addEventListener('click', () => {
+      document.querySelectorAll('.dropdown-menu.show').forEach(submenu => {
+        submenu.classList.remove('show');
+      });
+    });
+  }

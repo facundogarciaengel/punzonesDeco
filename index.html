@@ -3,7 +3,7 @@
 
 <head id="head">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Tres Puntos - Herramientas de Diseño</title>
@@ -58,56 +58,29 @@
                         </a>
                         <ul class="dropdown-menu">
 
-                            <!-- Submenú: Plegaderas de metal -->
-                            <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                            <!-- Plegaderas de metal -->
+                            <li>
+                                <a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(0)">
                                     Plegaderas de metal
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(0)">Acero inoxidable</a></li>
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(0)">Latón grande</a></li>
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(0)">Latón chica</a></li>
-                                </ul>
                             </li>
 
-                            <!-- Submenú: Plegaderas de teflón -->
-                            <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Plegaderas de teflón
+                            <!-- Plegaderas de teflón -->
+                            <li>
+                                <a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(1)">
+                                    Plegaderas de teflon
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(1)">Modelo abanico</a></li>
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(1)">Modelo clásico</a></li>
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(1)">Modelo lápiz</a></li>
-                                </ul>
                             </li>
 
-                            <!-- Submenú: Punzones -->
-                             <!-- Submenú: Punzones 2-->
+                            <!-- Punzones -->
+                            
                             <li class="dropdown dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="dropdown-item " href="#contenido-herramientas" onclick="irACategoria(2)">
                                     Punzones
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(2)">Micro punzón</a></li>
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(2)">Punzón pomo</a></li>
-                                    <li><a class="dropdown-item" href="#contenido-herramientas"
-                                            onclick="irACategoria(2)">Punzón largo</a></li>
-                                </ul>
                             </li>
 
-                            <!-- Ítem simple -->
+                            <!-- Otros -->
                             <li><a class="dropdown-item" href="#contenido-herramientas"
                                     onclick="irACategoria(3)">Cortante de precisión</a></li>
                             <li><a class="dropdown-item" href="#contenido-herramientas"
@@ -132,12 +105,7 @@
                     </h2>
                     <p class="mb-3">Proyecto de diseño y elaboración manual de herramientas para encuadernar.
                         Desarrollado y llevado adelante por Mariana Carballo y Jeremías Sanfelice.</p>
-                    <!--div class="cta-button">
-                        <a href="#novedades" class="btn cta-novedades">
-                            <span>NOVEDADES</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div-->
+
                 </div>
             </div>
         </div>
@@ -159,18 +127,20 @@
                 <div class="container py-5 text-center">
 
                     <div class="position-relative mb-5" style="height: 80px;">
-                        <button id="btn-prev"
-                            class="btn p-0 m-0 border-0 bg-transparent shadow-none position-absolute start-0 top-50 translate-middle-y"
-                            style="box-shadow: none; outline: none;">
-                            <i class="bi bi-arrow-left-circle fs-1 nav-icon"></i>
-                        </button>
-
+                        
+                        <!-- Título de la sección -->
                         <h2 id="titulo-seccion"
                             class="section-heading position-absolute top-50 start-50 translate-middle text-center mb-0"
                             style="font-size: 5rem;">
                             Plegaderas de Metal
                         </h2>
-
+                        <!-- Botón flecha izquierda -->
+                        <button id="btn-prev"
+                            class="btn p-0 m-0 border-0 bg-transparent shadow-none position-absolute start-0 top-50 translate-middle-y"
+                            style="box-shadow: none; outline: none;">
+                            <i class="bi bi-arrow-left-circle fs-1 nav-icon"></i>
+                        </button>
+                        <!-- Botón flecha derecha -->   
                         <button id="btn-next"
                             class="btn p-0 m-0 border-0 bg-transparent shadow-none position-absolute end-0 top-50 translate-middle-y"
                             style="box-shadow: none; outline: none;">
@@ -194,107 +164,105 @@
                         </div>
                     </div>
                 </div>
-                </section>
-         </div>
-        </section>
-            <section id="quienesSomos" class="quienesSomos section">
-                <section class="page-section cta">
-                    <div class="container">
+            </section>
+        </div>
+    </section>
+    <section id="quienesSomos" class="quienesSomos section">
+        <section class="page-section cta">
+            <div class="container">
 
-                        <div class="row">
-                            <div class="col-xl-9 mx-auto">
-                                <div class="cta-inner bg-faded text-center rounded">
-                                    <h2 class="section-heading mb-4">
-                                        <span class="section-heading-upper">Tres Puntos</span>
-                                        <span class="section-heading-lower">¿Quienes somos?</span>
-                                    </h2>
-                                    <p class="mb-4">Proyecto de diseño y elaboración manual de herramientas para
-                                        encuadernar.
-                                        </h2>
-                                    <p>Emprendimiento dedicado al diseño y desarrollo de herramientas especializadas
-                                        para
-                                        encuadernación
-                                        artesanal, con foco en la funcionalidad, la durabilidad y el cuidado del
-                                        detalle. Cada
-                                        pieza está
-                                        pensada para acompañar y potenciar el trabajo manual, respetando los oficios y
-                                        saberes
-                                        tradicionales
-                                        desde una mirada contemporánea.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-9 mx-auto">
-                                <div class="cta-inner bg-faded text-center rounded">
-                                    <h2 class="section-heading mb-4">
-
-                                        <span class="section-heading-lower">Mariana</span>
-                                    </h2>
-                                    <p>Se dedica a la encuadernación artesanal, la edición de publicaciones y la
-                                        impresión
-                                        tipográfica
-                                        en Otros Tiempos Imprenta Editora, donde explora oficios tradicionales
-                                        vinculados al
-                                        libro y la
-                                        palabra impresa. Su trabajo combina precisión técnica con sensibilidad estética,
-                                        dando
-                                        vida a
-                                        piezas únicas que recuperan el valor de lo hecho a mano.</p>
-                                    <h2 class="section-heading mb-4">
-
-                                        <span class="section-heading-lower">Jeremias</span>
-                                    </h2>
-                                    <p>por su parte, diseña y desarrolla herramientas especializadas para diversos
-                                        oficios,
-                                        con un
-                                        enfoque que articula la funcionalidad, la ergonomía y la belleza material. Su
-                                        producción dialoga
-                                        con el hacer artesanal, ofreciendo soluciones pensadas desde la experiencia del
-                                        taller y la
-                                        innovación aplicada.</p>
-
-
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-upper">Tres Puntos</span>
+                                <span class="section-heading-lower">¿Quienes somos?</span>
+                            </h2>
+                            <p class="mb-4">Proyecto de diseño y elaboración manual de herramientas para
+                                encuadernar.
+                                </h2>
+                            <p>Emprendimiento dedicado al diseño y desarrollo de herramientas especializadas
+                                para
+                                encuadernación
+                                artesanal, con foco en la funcionalidad, la durabilidad y el cuidado del
+                                detalle. Cada
+                                pieza está
+                                pensada para acompañar y potenciar el trabajo manual, respetando los oficios y
+                                saberes
+                                tradicionales
+                                desde una mirada contemporánea.</p>
                         </div>
                     </div>
-                </section>
-            </section>
-            <!-- Botón flotante del carrito -->
-            <button id="boton-carrito-flotante" class="btn btn-amarillo-naranja shadow-lg rounded-circle position-fixed"
-                data-bs-toggle="modal" data-bs-target="#modalCarrito"
-                style="bottom: 20px; right: 20px; z-index: 1050; width: 60px; height: 60px;">
-                <img src="assets/carritoGeneral.png" alt="Carrito" style="height: 30px;">
-                <span id="contador-carrito"
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    0
-                </span>
-            </button>
-            <!-- Modal Carrito -->
-            <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Cerrar"></button>
-                        </div>
-                        <div class="modal-body" id="carrito-contenido">
-                            <!-- Aquí van los productos agregados -->
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" onclick="finalizarCompra()">Finalizar
-                                Compra</button>
+                </div>
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+
+                                <span class="section-heading-lower">Mariana</span>
+                            </h2>
+                            <p>Se dedica a la encuadernación artesanal, la edición de publicaciones y la
+                                impresión
+                                tipográfica
+                                en Otros Tiempos Imprenta Editora, donde explora oficios tradicionales
+                                vinculados al
+                                libro y la
+                                palabra impresa. Su trabajo combina precisión técnica con sensibilidad estética,
+                                dando
+                                vida a
+                                piezas únicas que recuperan el valor de lo hecho a mano.</p>
+                            <h2 class="section-heading mb-4">
+
+                                <span class="section-heading-lower">Jeremias</span>
+                            </h2>
+                            <p>por su parte, diseña y desarrolla herramientas especializadas para diversos
+                                oficios,
+                                con un
+                                enfoque que articula la funcionalidad, la ergonomía y la belleza material. Su
+                                producción dialoga
+                                con el hacer artesanal, ofreciendo soluciones pensadas desde la experiencia del
+                                taller y la
+                                innovación aplicada.</p>
+
+
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Core theme JS-->
-            <script src="js/scripts.js"></script>
-            <!-- Bootstrap JS Bundle -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </section>
+    </section>
+    <!-- Botón flotante del carrito -->
+    <button id="boton-carrito-flotante" class="btn btn-amarillo-naranja shadow-lg rounded-circle position-fixed"
+        data-bs-toggle="modal" data-bs-target="#modalCarrito"
+        style="bottom: 20px; right: 20px; z-index: 1050; width: 60px; height: 60px;">
+        <img src="assets/carritoGeneral.png" alt="Carrito" style="height: 30px;">
+        <span id="contador-carrito"
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+        </span>
+    </button>
+    <!-- Modal Carrito -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="carrito-contenido">
+                    <!-- Aquí van los productos agregados -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="finalizarCompra()">Finalizar
+                        Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

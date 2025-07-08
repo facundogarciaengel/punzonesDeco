@@ -13153,3 +13153,57 @@ p {
   font-weight: bold;
   font-size: 0.9rem; /* para ajustar tamaño */
 }
+@media (max-width: 768px) {
+  .section-heading-lower {
+    font-size: 2.5rem !important;
+  }
+}
+/* Ocultar dropdowns que no están activos */
+.dropdown-menu:not(.show) {
+  display: none;
+}
+@media (max-width: 991.98px) { /* Bootstrap considera <992px como móvil/tablet */
+
+  /* Para que los dropdowns no ocupen espacio cuando están ocultos */
+  .navbar-collapse .dropdown-menu {
+    display: none !important;
+    padding: 0;  /* Remover paddings */
+    margin: 0;   /* Remover márgenes */
+  }
+
+  /* Cuando el dropdown está activo */
+  .navbar-collapse .dropdown-menu.show {
+    display: block !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .card {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 300px; /* o el ancho deseado */
+  margin: 0 auto;
+}
+
+  .card-body {
+    padding: 1rem; /* opcional, menos padding para más espacio real */
+  }
+}
+
+ @media (max-width: 576px) {
+  .position-relative.mb-5 {
+    flex-wrap: wrap; /* para que flechas se vayan abajo si no entran */
+    gap: 1rem;
+  }
+  #titulo-seccion {
+    max-width: 100%;
+    font-size: 1.2rem !important;
+    order: 1; /* que título quede arriba */
+  }
+  #btn-prev, #btn-next {
+    order: 2; /* flechas abajo */
+    font-size: 1.5rem;
+  }
+}
