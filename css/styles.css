@@ -13207,3 +13207,20 @@ p {
     font-size: 1.5rem;
   }
 }
+
+/* Fuerza color de fondo del dropdown */
+.navbar .dropdown-menu {
+    background-color: #e2d4be !important;
+    border: none !important;
+}
+
+/* Fuerza color del texto */
+.navbar .dropdown-menu .dropdown-item {
+    color: #3e2f1c !important;
+}
+
+/* Hover personalizado */
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #d6c4ad !important;
+    color: #000 !important;
+}
