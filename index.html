@@ -38,7 +38,7 @@
     <nav id="mainNav" class="navbar navbar-expand-lg fixed-top shadow-lg mx-auto px-4"
         style="width: 90%; max-width: 1140px; top: 20px; border-radius: 1.5rem">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <a class="navbar-brand d-flex align-items-center" >
                 <img src="assets/favicon.png" alt="Logo Tres Puntos" class="animated-logo me-2"
                     style="width: 30px; height: auto;">
                 <!--span class="fw-bold d-none d-lg-inline text-uppercase">Tres Puntos</span-->
@@ -129,7 +129,7 @@
         <div class="container-fluid px-4" data-aos="fade-up" data-aos-delay="100">
 
             <section class="herramientas-section cta">
-                <div class="container py-5 text-center">
+                <div class="container-fluid py-5 text-center">
 
                     <div class="position-relative mb-5" style="height: 80px;">
 
@@ -237,36 +237,15 @@
         </section>
     </section>
 
-    <!--section id="contactanos" class="contactanos section py-5">
-        <div class="cta-inner bg-faded text-center rounded">
-            <div class="container">
-
-                <h2 class="text-center mb-4">Contáctanos</h2>
-                <form id="form-contacto">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </section-->
-    <footer id="footer" class="text-light py-5 mt-5 footer">
+    
+    <footer id="footer" class="text-light py-5 mt-5 footer position-relative" style="position: relative;">
         <div class="container">
             <div class="row text-center text-md-start">
-                <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase mb-3">Tres Puntos</h5>
-                    <p>Herramientas de diseño para encuadernación artesanal. Cada pieza está pensada para acompañar el
-                        trabajo manual con precisión y belleza.</p>
+                <div class="col-md-4 mb-4 text-center" style="margin-top: 2rem;">
+                    <img src="assets/favicon.png" alt="Icono Tres Puntos"class="animated-logo me-2"
+                        style="width: 48px; height: 48px; margin-bottom: 8px;">
+                    <h5 class="text-uppercase">Tres Puntos</h5>
+
                 </div>
                 <div class="col-md-4 mb-4">
                     <h5 class="text-uppercase mb-3">Contacto</h5>
@@ -275,19 +254,10 @@
                     <p>
                         <i class="bi bi-instagram me-2"></i>
                         <a href="https://www.instagram.com/trespuntosherramientas" target="_blank"
-                            class="text-white text-decoration-none">
-                            @trespuntosherramientas
-                        </a>
+                            class="text-white text-decoration-none">@trespuntosherramientas</a>
                     </p>
                 </div>
-                <!--div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase mb-3">Escribinos por Instagram</h5>
-                    <div class="d-flex justify-content-center justify-content-md-start gap-3 ">
-                        <a href="https://www.instagram.com/trespuntosherramientas" target="_blank"><i
-                                class="bi bi-instagram fs-4 text-white"></i></a>
-
-                    </div>
-                </div-->
+                <!-- Podés dejar la tercera columna vacía o eliminarla -->
             </div>
             <hr />
             <div class="text-center small mt-3">
@@ -295,6 +265,15 @@
             </div>
         </div>
     </footer>
+    <!-- Mapa flotante arriba -->
+    <div class="mapa-embed">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26305.115583096496!2d-58.64632594754814!3d-34.49934885438883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb4558d53941%3A0x4a50eedaa7f8f645!2sDon%20Torcuato%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1752181866314!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+
     <!-- Botón flotante del carrito -->
     <button id="boton-carrito-flotante" class="btn btn-amarillo-naranja shadow-lg rounded-circle position-fixed"
         data-bs-toggle="modal" data-bs-target="#modalCarrito"

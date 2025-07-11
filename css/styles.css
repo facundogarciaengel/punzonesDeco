@@ -677,7 +677,29 @@ progress {
 }
 
 .container,
-.container-fluid,
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 576px) {
+  #productos > .container-fluid,
+  #productos > .container-fluid > .herramientas-section,
+  #productos > .container-fluid > .herramientas-section > .container-fluid,
+  #contenido-herramientas {
+    width: calc(100vw - 1rem) !important;  /* ancho full menos el padding */
+    max-width: calc(100vw - 1rem) !important;
+    padding-left: 0.5rem !important;        /* 8px */
+    padding-right: 0.5rem !important;
+    margin-left: calc(-50vw + 50% + 0.5rem) !important;  /* ajusta margen para centrar */
+    margin-right: 0 !important;
+  }
+
+  #contenido-herramientas > .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
 .container-xxl,
 .container-xl,
 .container-lg,
@@ -13177,18 +13199,9 @@ p {
   }
 
 }
-
 @media (max-width: 576px) {
-  .card {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  max-width: 300px; /* o el ancho deseado */
-  margin: 0 auto;
-}
-
   .card-body {
-    padding: 1rem; /* opcional, menos padding para más espacio real */
+    padding: 1rem 1rem; /* menos que el default para que no quede tan comprimido */
   }
 }
 
@@ -13224,3 +13237,38 @@ p {
     background-color: #d6c4ad !important;
     color: #000 !important;
 }
+
+.mapa-embed {
+  position: absolute;
+  top: 3600px;
+  left: 77%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  z-index: 1000;
+  box-shadow: 0 4px 30px 5px rgba(0, 0, 0, 1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mapa-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .mapa-embed {
+    position: relative;     /* ya no flotante */
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;             /* ocupa el ancho del contenedor */
+    height: 250px;           /* opcional: más compacto */
+    margin-top: 0rem; 
+    border-radius: 0px;       /* separarlo del contenido superior si querés */
+  }
+}
+
