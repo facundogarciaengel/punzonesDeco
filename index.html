@@ -29,7 +29,7 @@
     <header>
 
         <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <span class="site-heading-upper text-primary mb-3">Herramientas de diseño para encuadernacion</span>
+            <span class="site-heading-upper text-primary mb-3">herramientas para oficios manuales</span>
             <span class="site-heading-lower">Tres Puntos</span>
         </h1>
     </header>
@@ -38,7 +38,7 @@
     <nav id="mainNav" class="navbar navbar-expand-lg fixed-top shadow-lg mx-auto px-4"
         style="width: 90%; max-width: 1140px; top: 20px; border-radius: 1.5rem">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" >
+            <a class="navbar-brand d-flex align-items-center">
                 <img src="assets/favicon.png" alt="Logo Tres Puntos" class="animated-logo me-2"
                     style="width: 30px; height: auto;">
                 <!--span class="fw-bold d-none d-lg-inline text-uppercase">Tres Puntos</span-->
@@ -69,24 +69,32 @@
                                     Plegaderas de teflon
                                 </a>
                             </li>
+                            <!-- Set plegaderas -->
+                            <li>
+                                <a class="dropdown-item" href="#contenido-herramientas" onclick="irACategoria(2)">
+                                    Set de plegaderas
+                                </a>
+                            </li>
 
                             <!-- Punzones -->
 
                             <li class="dropdown dropend">
-                                <a class="dropdown-item " href="#contenido-herramientas" onclick="irACategoria(2)">
+                                <a class="dropdown-item " href="#contenido-herramientas" onclick="irACategoria(3)">
                                     Punzones
                                 </a>
                             </li>
 
-                            <!-- Otros -->
+                            <!-- Cortantes -->
                             <li><a class="dropdown-item" href="#contenido-herramientas"
-                                    onclick="irACategoria(3)">Cortante de precisión</a></li>
+                                    onclick="irACategoria(4)">Cortantes</a></li>
                             <li><a class="dropdown-item" href="#contenido-herramientas"
-                                    onclick="irACategoria(3)">Rodillo para Grabado</a></li>
+                                    onclick="irACategoria(4)">Cortantes</a></li>
+                            <li><a class="dropdown-item" href="pedidosPersonalizados.html">Pedidos Personalizados</a>
+                            </li>
 
                         </ul>
                     </li>
-                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="#quienesSomos">¿Quienes
+                    <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="quienesSomos.html">¿Quienes
                             somos?</a></li>
                     <li class="nav-item px-lg-5"><a class="nav-link text-uppercase" href="#footer">Contactanos</a></li>
                     <li class="nav-item px-lg-5 d-flex align-items-center">
@@ -102,14 +110,15 @@
     <section id="hero" class="hero-section clearfix">
         <div class="container">
             <div class="intro">
-                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.webp" alt="..." />
                 <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                    <h2 class="section-heading mb-4">
-                        <span class="section-heading-upper">Herramientas de diseño para encuadernacion</span>
-                        <span class="section-heading-lower">Tres puntos</span>
+                    <h2 class="section-heading mb-0">
+                        <!--span class="section-heading-upper">Herramientas de diseño para encuadernacion</span>
+                        <span class="section-heading-lower">Tres puntos</span-->
                     </h2>
-                    <p class="mb-3">Proyecto de diseño y elaboración manual de herramientas para encuadernar.
-                        Desarrollado y llevado adelante por Mariana Carballo y Jeremías Sanfelice.</p>
+                    <p class="mb-3">Trabajamos con materiales nobles y procesos manuales. Nos destacamos por la
+                        combinación de diseño y funcionalidad. Adquiriendo nuestras herramientas estas apoyando al
+                        desarrollo de la industria nacional</p>
 
                 </div>
             </div>
@@ -121,7 +130,7 @@
         <!-- Título -->
         <div class="container section-title" data-aos="fade-up">
             <h2 class="section-heading mb-4">
-                <span class="section-heading-lower" style="font-size: 5rem;">Productos</span>
+                <span class="section-heading-lower" style="font-size: 4rem;">Productos</span>
             </h2>
         </div>
 
@@ -137,7 +146,7 @@
                         <h2 id="titulo-seccion"
                             class="section-heading position-absolute top-50 start-50 translate-middle text-center mb-0"
                             style="font-size: 5rem;">
-                            Plegaderas de Metal
+                            Plegaderas<br> de Metal
                         </h2>
                         <!-- Botón flecha izquierda -->
                         <button id="btn-prev"
@@ -155,7 +164,7 @@
 
                     <div class="position-relative">
 
-                        <!-- Contenedor dinámico donde se cambiará todo el contenido -->
+                        <!-- Los productos se generan dinámicamente desde JS -->
                         <div id="contenido-herramientas" class="row justify-content-center"></div>
                     </div>
                 </div>
@@ -172,7 +181,7 @@
             </section>
         </div>
     </section>
-    <section id="quienesSomos" class="quienesSomos section">
+    <!--section id="quienesSomos" class="quienesSomos section">
         <section class="page-section cta">
             <div class="container">
 
@@ -235,14 +244,21 @@
                 </div>
             </div>
         </section>
-    </section>
+    </section-->
+    <!-- Mapa flotante arriba -->
+    <div class="mapa-embed">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26305.115583096496!2d-58.64632594754814!3d-34.49934885438883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb4558d53941%3A0x4a50eedaa7f8f645!2sDon%20Torcuato%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1752181866314!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
 
-    
-    <footer id="footer" class="text-light py-5 mt-5 footer position-relative" style="position: relative;">
+    <footer id="footer" class="text-light py-5 mt-5 footer position-relative  z-index: 1000;"
+        style="position: relative;">
         <div class="container">
             <div class="row text-center text-md-start">
                 <div class="col-md-4 mb-4 text-center" style="margin-top: 2rem;">
-                    <img src="assets/favicon.png" alt="Icono Tres Puntos"class="animated-logo me-2"
+                    <img src="assets/favicon.png" alt="Icono Tres Puntos" class="animated-logo me-2"
                         style="width: 48px; height: 48px; margin-bottom: 8px;">
                     <h5 class="text-uppercase">Tres Puntos</h5>
 
@@ -265,13 +281,7 @@
             </div>
         </div>
     </footer>
-    <!-- Mapa flotante arriba -->
-    <div class="mapa-embed">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26305.115583096496!2d-58.64632594754814!3d-34.49934885438883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb4558d53941%3A0x4a50eedaa7f8f645!2sDon%20Torcuato%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1752181866314!5m2!1ses-419!2sar"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+
 
 
     <!-- Botón flotante del carrito -->

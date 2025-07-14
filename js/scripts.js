@@ -2,15 +2,15 @@
 
 const categorias = [
   {
-    titulo: "Plegaderas de Metal",
+    titulo: "Plegaderas<br> de Metal",
     productos: [
       {
         id: "Acero Inoxidable",
         nombre: "Acero Inoxidable AX-01",
         imagen: "assets/img/plegadora_acero.jpg",
         alt: "Plegadera Acero",
-        descripcion: "Herramienta artesanal fabricada en acero inoxidable de alta calidad.",
         detalles: [
+          "acero inoxidable de alta calidad",
           "120 x 25mm x 2mm",
           "Doble punta",
           "Ideal para trazar papel, cartulina, cartones finos",
@@ -19,24 +19,216 @@ const categorias = [
         precio: 1000
       },
       {
-        id: "Laton Grande",
-        nombre: "Laton Grande LT-01",
+        id: "Laton",
+        nombre: "Latón LT-01",
         imagen: "assets/img/plegadora_acero.jpg",
         alt: "Plegadera Laton",
-        descripcion: "Ideal para trabajos delicados y detalles finos gracias a su punta resistente.",
-        detalles: ["120 x 20mm x 2mm"],
+        detalles: [
+          "120 x 20mm x 2mm",
+          "Doble punta",
+          "Ideal para trabajos delicados y detalles finos gracias a su punta resistente",
+          "Se puede calentar la pieza para trabajar con materiales que requiera temperatura"
+        ],
         precio: 1000
       },
-      //... otros productos
     ]
   },
-  //... otras categorias
+  {
+    titulo: "Plegaderas<br> de Teflon",
+    productos: [
+      {
+        id: "clasica",
+        nombre: "Clásica TF-03",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Plegadera de teflon",
+        detalles: [
+          "Medidas entre 110-130mm x 22mm x6mm",
+          "Doble punta: Triangular y con corte a 45º",
+          "No saca brillo sobre la superficie al ejercer fricción",
+          "Ideales para todo tipo de papel, telas y papeles vinílicos específicos de encuadernación",
+          "Suaves y flexibles, como la nobleza de su materia prima",
+          "Se puede utilizar en trabajos de alfarería como bruñidor de piezas de arcilla"
+        ],
+        precio: 1000
+      },
+      {
+        id: "aleta",
+        nombre: "Aleta TF-02",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Plegadera teflon",
+        detalles: [
+          "​Forma cuarto de oblongo con ángulo en 90º",
+          "Medidas 7cm x 5cm x 3mm",
+          "No saca brillo sobre la superficie al ejercer fricción",
+          "Ideales para todo tipo de papel, telas y papeles vinílicos específicos de encuadernación",
+          "Para trabajar superficies más grandes, forrar tapas y guardas",
+          "Suaves y flexibles, como la nobleza de su materia prima",
+          "Se puede utilizar en trabajos de alfarería como bruñidor de piezas de arcilla"
+        ],
+        precio: 1000
+      },
+      {
+        id: "lapiz",
+        nombre: "Lápiz",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Plegadera teflon",
+        detalles: [
+          "Medidas 110mm x 12mm",
+          "Una punta cónica y otra plana con corte a 45º de ambos lados",
+          "No saca brillo sobre la superficie al ejercer fricción",
+          "Ideales para todo tipo de papel, telas y papeles vinílicos específicos de encuadernación",
+          "Suaves y flexibles, como la nobleza de su materia prima",
+          "Se puede utilizar en trabajos de alfarería como bruñidor de piezas de arcilla"
+        ],
+        precio: 1000
+      },
+      {
+        id: "gota",
+        nombre: "Gota",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Plegadera teflon Gota",
+        detalles: [
+          "Medidas 100 x 15 mm aproximadamente x6 mm",
+          "No saca brillo sobre la superficie al ejercer fricción",
+          "Todo tipo de papel, telas y papeles vinílicos específicos de encuadernación",
+          "Ideal para detalles,terminaciones, como también plegado de origami",
+          "Suaves y flexibles, como la nobleza de su materia prima"
+        ],
+        precio: 1000
+      }
+    ]
+  },
+  {
+    titulo: "Set<br> de plegaderas",
+    productos: [
+      {
+        id: "pocket",
+        nombre: "Set pocket",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Set pocket",
+        detalles: [
+          "Practicidad en su guardado: La caja soporte cuenta con tres ranuras donde descansan cada una de las herramientas",
+          "Versatilidad: Cada plegadera posee un ángulo/forma diferente en cada uno de sus extremos",
+          "Tamaño ideal para: dar detalles, asentar cantos y bisagras, plegar origami, trabajos manuales finos",
+          "Cada una ofrece una fuerza y una resistencia diferente",
+        ],
+        advertencia: {
+          titulo: "Incluye",
+          textos: [
+            "1 plegadera de 100 % teflón 90x10mm x3mm",
+            "1 plegadera de acero inoxidable 90x10mm x2mm",
+            "1 plegadera de latón 90x10mm x3mm",
+            "1 cajita contenedora en madera de Algarrobo 100x45mm x15mm"
+          ]
+        },
+        precio: 1000
+      },
+    ],
+  },
+  {
+    titulo: "Punzones",
+    productos: [
+      {
+        id: "microPunzon",
+        nombre: "Micro punzón MP-01",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Punzon",
+        detalles: [
+          "Punta fina de 0.7 mm y esmerilada para no desgarrar el papel",
+          "Bordado en papel, su punta fina genera un pequeño orificio",
+          "Apto para encuadernar cuadernillos de pocas hojas, hojas finas, cartulinas por unidad",
+          "Mango en madera dura seleccionada de stock",
+          "Tamaño pequeño para mayor precisión en la perforación",
+          "Marca engarzada en bronce",
+          "Capuchón en madera seleccionada para asegurar la vida de la punta ante posibles caídas"
+        ],
+        advertencia: {
+          titulo: "¡Atención!",
+          textos: [
+            "Si vas a utilizarlo para otro fin del especificado: sea perforar cuadernillos de varias hojas, te invitamos a sentir la resistencia de la herramienta para evitar el quiebre de su punta.",
+            "No hacer palanca de ningún tipo sobre la punta (por ejemplo para sacar o desenredar un nudo en el hilo)"
+          ]
+        },
+        precio: 1000
+      },
+      {
+        id: "pomo",
+        nombre: "Punzón pomo PP-02",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "punzon pomo",
+        detalles: [
+          "Punta a elección entre 1.2 mm o 0.7 mm",
+          "La punta de 1.2mm es ideal para cuadernillos de hasta 6 hojas de 80g aprox y sus equivalentes en gramaje y espesor del cuadernillo",
+          "Mango con diseño en pomo para mayor comodidad de agarre",
+          "Capuchón en madera seleccionada para asegurar la vida de la punta ante posibles caídas",
+          "Marca engarzada en bronce",
+          "Punta esmerilada para no desgarrar el papel",
+        ],
+        advertencia: {
+          titulo: "¡Atención!",
+          textos: [
+            "Recomendamos sentir y medir la resistencia de la herramienta según el trabajo a realizar NO UTILIZAR PARA PERFORAR CARTONES GRUESOS y hacerlo con precaución en libretas tapa blanda en cartulina."
+          ]
+        },
+
+        precio: 1000
+      },
+      {
+        id: "punzonLargo",
+        nombre: "Punzón largo PL-03",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Punzon largo",
+        detalles: [
+          "Punta a elección entre 1.2 mm o 0.7 mm",
+          "La punta de 1.2mm es ideal para cuadernillos de hasta 6 hojas de 80g aprox y sus equivalentes en gramaje y espesor del cuadernillo",
+          "Capuchón en madera seleccionada para asegurar la vida de la punta ante posibles caídas",
+          "Marca engarzada en bronce",
+          "Punta esmerilada para no desgarrar el papel",
+        ],
+        advertencia: {
+          titulo: "¡Atención!",
+          textos: [
+            "Recomendamos sentir y medir la resistencia de la herramienta según el trabajo a realizar NO UTILIZAR PARA PERFORAR CARTONES GRUESOS y hacerlo con precaución en libretas tapa blanda en cartulina"
+          ]
+        },
+        precio: 1000
+      }
+    ]
+  },
+  {
+    titulo: "Cortantes",
+    productos: [
+
+      {
+        id: "cortante",
+        nombre: "Cortante de precisión",
+        imagen: "assets/img/plegadora_acero.jpg",
+        alt: "Cortante de precisión",
+        detalles: [
+          "Cuerpo y capuchón en madera dura seleccionada de stock",
+          "Diseño ergonómico, cómodo al agarre de la mano",
+          "Entre el filo del bisturí y mango, el diseño cuenta con un cuello que evita que el dedo se deslice hacía el filo, minimizando posibles lastimaduras",
+          "Sistema de ajuste que permite intercambiar filos",
+          "Admite cualquier filo que su dorso mida 6 mm"
+        ],
+        precio: 1000
+      },
+    ]
+  }
 ];
 
 // Función para generar HTML de productos de forma dinámica
 function generarHTMLProductos(productos) {
+  // Determinamos clase de columna según cantidad de productos
+  let colClass;
+  if (productos.length === 3) {
+    colClass = 'col-md-4';  // 3 por fila
+  } else {
+    colClass = 'col-md-6';  // 2 por fila (para 1, 2, o 4)
+  }
+
   return productos.map(producto => `
-    <div class="col-12 col-sm-6 col-md-4 mb-4">
+    <div class="col-12 col-sm-6 ${colClass} mb-4">
       <div class="card h-100 shadow-sm cta-inner bg-faded">
         <a data-bs-toggle="modal" data-bs-target="#imgModal" onclick="setModalImage('${producto.imagen}')">
           <div class="img-hover-zoom">
@@ -46,10 +238,19 @@ function generarHTMLProductos(productos) {
         </a>
         <div class="card-body d-flex flex-column" style="font-family: 'Lora', serif;">
           <h3 class="card-title">${producto.nombre}</h3>
-          <p class="card-text">${producto.descripcion}</p>
           <ul class="text-start ps-3">
             ${producto.detalles.map(detalle => `<li>${detalle}</li>`).join('')}
           </ul>
+
+          ${producto.advertencia ? `
+            <div class="mt-3 p-2 bg-warning-subtle rounded">
+              <strong>${producto.advertencia.titulo}</strong>
+              <ul class="text-start ps-3 mt-2 mb-0">
+                ${producto.advertencia.textos.map(texto => `<li>${texto}</li>`).join('')}
+              </ul>
+            </div>
+          ` : ''}
+
           <div class="cart-btn mt-auto" onclick="sumarAlCarrito(event)"
             data-id="${producto.id}"
             data-nombre="${producto.nombre}"
@@ -61,6 +262,7 @@ function generarHTMLProductos(productos) {
     </div>
   `).join('');
 }
+
 
 
 let indiceActual = 0;
@@ -200,23 +402,23 @@ function restarDelCarrito(id) {
 }
 
 document.querySelectorAll('.dropdown-menu .dropdown-toggle').forEach(toggle => {
-    toggle.addEventListener('click', e => {
-      e.preventDefault();
+  toggle.addEventListener('click', e => {
+    e.preventDefault();
 
-      const submenu = toggle.nextElementSibling;
-      if (!submenu) return;
+    const submenu = toggle.nextElementSibling;
+    if (!submenu) return;
 
-      // Solo alternar el submenu sin cerrar otros
-      submenu.classList.toggle('show');
+    // Solo alternar el submenu sin cerrar otros
+    submenu.classList.toggle('show');
+  });
+});
+
+// Opcional: cerrar submenus cuando se cierra el menú principal (hamburguesa)
+const navbarToggler = document.querySelector('.navbar-toggler');
+if (navbarToggler) {
+  navbarToggler.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown-menu.show').forEach(submenu => {
+      submenu.classList.remove('show');
     });
   });
-
-  // Opcional: cerrar submenus cuando se cierra el menú principal (hamburguesa)
-  const navbarToggler = document.querySelector('.navbar-toggler');
-  if (navbarToggler) {
-    navbarToggler.addEventListener('click', () => {
-      document.querySelectorAll('.dropdown-menu.show').forEach(submenu => {
-        submenu.classList.remove('show');
-      });
-    });
-  }
+}
