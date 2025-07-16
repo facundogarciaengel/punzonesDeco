@@ -13317,3 +13317,24 @@ p {
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
   }
 }
+
+.site-heading span {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* sombra sutil gris oscura */
+}
+
+.img-producto {
+  height: 500px;           /* Alto fijo */
+  width: 100%;             /* Que ocupe todo el ancho disponible */
+  object-fit: cover;       /* Recorta el exceso de ancho */
+  object-position: center; /* Centra la imagen si se recorta */
+  border-radius: 0.5rem;   /* Por si querés bordes redondeados */
+}
+
+.imagen-chica {
+  max-width: 400px;   /* o el valor que quieras */
+  height: auto;
+}
+
+#titulo-seccion {
+  font-family: 'Lora', serif !important;
+}

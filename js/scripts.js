@@ -5,9 +5,12 @@ const categorias = [
     titulo: "Plegaderas<br> de Metal",
     productos: [
       {
-        id: "Acero Inoxidable",
+        id: "Acero-Inoxidable",
         nombre: "Acero Inoxidable AX-01",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/AX01.webp",
+          "assets/img/AX012.webp",
+          "assets/img/AX013.webp"
+          ],
         alt: "Plegadera Acero",
         detalles: [
           "acero inoxidable de alta calidad",
@@ -21,7 +24,11 @@ const categorias = [
       {
         id: "Laton",
         nombre: "Latón LT-01",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/laton1.webp",
+          "assets/img/laton2.webp",
+          "assets/img/laton3.webp",
+          "assets/img/laton4.webp"
+        ],
         alt: "Plegadera Laton",
         detalles: [
           "120 x 20mm x 2mm",
@@ -39,7 +46,7 @@ const categorias = [
       {
         id: "clasica",
         nombre: "Clásica TF-03",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/TF-03.webp"],
         alt: "Plegadera de teflon",
         detalles: [
           "Medidas entre 110-130mm x 22mm x6mm",
@@ -54,7 +61,10 @@ const categorias = [
       {
         id: "aleta",
         nombre: "Aleta TF-02",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/TF02.webp",
+          "assets/img/TF021.webp",
+          "assets/img/TF-022.webp"
+        ],
         alt: "Plegadera teflon",
         detalles: [
           "​Forma cuarto de oblongo con ángulo en 90º",
@@ -70,7 +80,9 @@ const categorias = [
       {
         id: "lapiz",
         nombre: "Lápiz",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/TL.webp",
+          "assets/img/TL1.webp"
+        ],
         alt: "Plegadera teflon",
         detalles: [
           "Medidas 110mm x 12mm",
@@ -85,7 +97,7 @@ const categorias = [
       {
         id: "gota",
         nombre: "Gota",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/AX01.webp"],
         alt: "Plegadera teflon Gota",
         detalles: [
           "Medidas 100 x 15 mm aproximadamente x6 mm",
@@ -104,7 +116,7 @@ const categorias = [
       {
         id: "pocket",
         nombre: "Set pocket",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/SETPOCKET.webp"],
         alt: "Set pocket",
         detalles: [
           "Practicidad en su guardado: La caja soporte cuenta con tres ranuras donde descansan cada una de las herramientas",
@@ -131,7 +143,10 @@ const categorias = [
       {
         id: "microPunzon",
         nombre: "Micro punzón MP-01",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/micro1.webp",
+          "assets/img/micro2.webp",
+          "assets/img/micro3.webp"
+        ],
         alt: "Punzon",
         detalles: [
           "Punta fina de 0.7 mm y esmerilada para no desgarrar el papel",
@@ -154,7 +169,12 @@ const categorias = [
       {
         id: "pomo",
         nombre: "Punzón pomo PP-02",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/POMO1.webp",
+          "assets/img/POMO2.webp",
+          "assets/img/POMO3.webp",
+          "assets/img/POMO4.webp",
+          "assets/img/POMO5.webp"
+        ],
         alt: "punzon pomo",
         detalles: [
           "Punta a elección entre 1.2 mm o 0.7 mm",
@@ -176,7 +196,13 @@ const categorias = [
       {
         id: "punzonLargo",
         nombre: "Punzón largo PL-03",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/PL.webp",
+          "assets/img/PL1.webp",
+          "assets/img/PL2.webp",
+          "assets/img/PL3.webp",
+          "assets/img/PL4.webp",
+          "assets/img/PL5.webp"
+        ],
         alt: "Punzon largo",
         detalles: [
           "Punta a elección entre 1.2 mm o 0.7 mm",
@@ -202,7 +228,11 @@ const categorias = [
       {
         id: "cortante",
         nombre: "Cortante de precisión",
-        imagen: "assets/img/plegadora_acero.jpg",
+        imagenes: ["assets/img/cortante3.webp",
+          "assets/img/cortante4.webp",
+          "assets/img/cortante1.webp",
+          "assets/img/cortante2.webp"
+          ],
         alt: "Cortante de precisión",
         detalles: [
           "Cuerpo y capuchón en madera dura seleccionada de stock",
@@ -219,23 +249,40 @@ const categorias = [
 
 // Función para generar HTML de productos de forma dinámica
 function generarHTMLProductos(productos) {
-  // Determinamos clase de columna según cantidad de productos
   let colClass;
   if (productos.length === 3) {
-    colClass = 'col-md-4';  // 3 por fila
+    colClass = 'col-md-4';
   } else {
-    colClass = 'col-md-6';  // 2 por fila (para 1, 2, o 4)
+    colClass = 'col-md-6';
   }
 
   return productos.map(producto => `
     <div class="col-12 col-sm-6 ${colClass} mb-4">
       <div class="card h-100 shadow-sm cta-inner bg-faded">
-        <a data-bs-toggle="modal" data-bs-target="#imgModal" onclick="setModalImage('${producto.imagen}')">
-          <div class="img-hover-zoom">
-            <img src="${producto.imagen}" class="img-fluid rounded img-producto" alt="${producto.alt}">
-            <div class="zoom-icon"><i class="bi bi-search"></i></div>
+
+        <div id="carousel-${producto.id}" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            ${producto.imagenes.map((src, i) => `
+              <div class="carousel-item ${i === 0 ? 'active' : ''}">
+                <a data-bs-toggle="modal" data-bs-target="#imgModal" onclick="setModalImage('${src}')">
+                  <div class="img-hover-zoom">
+                    <img src="${src}" class="d-block w-100 rounded img-producto" alt="${producto.alt}">
+                    <div class="zoom-icon"><i class="bi bi-search"></i></div>
+                  </div>
+                </a>
+              </div>
+            `).join('')}
           </div>
-        </a>
+          ${producto.imagenes.length > 1 ? `
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${producto.id}" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-${producto.id}" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          ` : ''}
+        </div>
+
         <div class="card-body d-flex flex-column" style="font-family: 'Lora', serif;">
           <h3 class="card-title">${producto.nombre}</h3>
           <ul class="text-start ps-3">
